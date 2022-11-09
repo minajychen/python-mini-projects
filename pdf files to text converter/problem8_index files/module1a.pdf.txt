@@ -1,0 +1,258 @@
+CONCEPTS OF PROGRAMMINGMPCS 50101 MODULE 1WELCOME TO PROGRAMMINGMODULE 1 MPCS 50101PROGRAMMING¥Programming is how a person 
+writes instructions to tell a 
+computer what to do ¥Now matter how fancy AI/
+machine learning are usingÉ
+you still need to tell a 
+computer exactly what to do
+PROGRAMMING¥Sometimes the best programs 
+are actually humans
+PROGRAMMING¥Ways people interact with a 
+computer program
+ ¥User of software
+ -Running instructions that have 
+been designed by someone elsePROGRAMMING¥Ways people interact with a 
+computer program
+ ¥Power user -Google queries, Excel macros
+PROGRAMMING¥Ways people interact with a 
+computer program
+ ¥Programmer
+ ¥Write your own code
+PROGRAMMING LANGUAGESPROGRAMMING  LANGUAGES¥A language that 
+allows a 
+programmer 
+execute instructions on a 
+computer ¥The instructions 
+are called the 
+source code
+PROGRAMMING LANGUAGES¥Two different kinds of languages
+ -Low-level -Machine, assembly code -High-level -Text languages with syntax, rules, etc.
+PROGRAMMING LANGUAGES¥High-level languages -Simpler languages that are converted to low-
+level languages -Examples: C, C++, Perl, Java, Swift, Go -Advantages -Easier to write, shorter, faster development 
+time, portable
+MOST APPLICATIONS 
+ARE WRITTEN IN A HIGH LEVEL LANGUAGEPROGRAMMING  LANGUAGES¥High-level language vs. low-level languagehttps://www.geeksforgeeks.org/difference-between-high-level-and-low-level-languages/
+PROGRAMMING LANGUAGES¥Python, JavaScript
+ -Interpreted every time it runs
+ ¥C, C++  -Compiled into an executable file ¥Assembly language -Assembled into machine code ¥Machine code -Run by the CPU
+High-levelLow-levelPROGRAMMING LANGUAGES¥Translate a high-level language program using a 
+compiler ¥Done a single time to create an executable program
+HIGH-LEVEL LANGUAGES MUST BE CONVERTED TO CODE 
+THE MACHINE CAN READPROGRAMMING LANGUAGES¥Translating a high-level language program using an 
+interpreter
+ ¥File is read line by line and executed
+HIGH-LEVEL LANGUAGES MUST BE CONVERTED TO CODE 
+THE MACHINE CAN READPROGRAMMING LANGUAGES¥Interpreted
+ ¥Source code run line-by-line
+ ¥Faster development cycle ¥Slower than compiled
+ ¥Examples: Perl, Python, Ruby, 
+Swift  ¥Compiled ¥Source code converted to 
+executable ¥Better performance
+ ¥Slower development time
+ ¥Examples: C, C++, Go, SwiftPROGRAMMING LANGUAGES¥Languages, politics, religion
+ ¥Why choose one over another
+ -Targeted platform (iOS)
+ -Development time
+ -Performance -Familiarity
+PROGRAMMING  LANGUAGES¥Python
+ -Interpreted language
+ -Runs everywhere
+ -Widely used across many fields 
+(and in the program)
+ -Strong ecosystem for third-party 
+code and toolsCOURSE TECHNOLOGIES¥Python
+ -Support for SciPy scientific programming
+ -Extensibility for C modules
+ -Optimize when you need it
+ -Native web application language
+PROGRAMMING LANGUAGES¥Once you know one language, learning a new language is straightforward
+ -"Hello world" in different languages
+ ¥You will spend more time thinking 
+about how to solve the problem
+ -Are you fighting the problem or the 
+language?PROGRAMMING LANGUAGES¥You will spend more time 
+thinking about how to solve 
+the problem
+ -Are you fighting the problem or 
+the language?
+PROGRAMMING PARADIGMS
+PROGRAMMING  PARADIGMS
+¥Programming 
+paradigms 
+classifies languages and styles based on their features and 
+uses ¥In some cases, it just the style in 
+which you program
+PROGRAMMING  PARADIGMS
+¥In some cases, it just the style in 
+which you program
+PROCEDURALFUNCTIONALPROGRAMMING PARADIGMS
+DEBUGGING(EVERYTHING THAT MAY DRIVE YOU 
+MAD WHILE PROGRAMMING)DEBUGGING¥Programming requires 
+absolute precision and 
+attention to detail
+I MISSED A COMMADEBUGGING¥Programming 
+requires absolute 
+precision and 
+attention to 
+detailDEBUGGING¥Term "bug" coined by 
+Grace Hopper in 1946  ¥A moth was discovered to be 
+the cause of a malfunction in 
+the Mark II naval computer
+DEBUGGING¥Types of errors in a program
+ ¥Syntax ¥Runtime
+ ¥Semantic
+DEBUGGING¥Syntax errors
+ ¥Error is related to the syntax used 
+and/or structure of the program
+ ¥First error found is reported and 
+quits ¥Highlights problem with "^"
+ ¥Interpreters are not forgiving
+>>> 1st_name = "Ada"  File "<stdin>", line 1    1st_name = "Ada"           ^SyntaxError: invalid syntaxDEBUGGING¥Runtime errors
+ -Errors that only occur while 
+program is running
+ -Refers to line of error
+ -Describes error
+>>> x = 100>>> y = 0>>> x/yTraceback (most recent call last):  File "<stdin>", line 1, in <module>ZeroDivisionError: integer division or modulo by zeroDEBUGGING¥Semantic (logical) errors
+ -Program runs but does not do 
+what you expected -The instructions you gave it did 
+not solve the problem
+# Evaluate if the value# of the variable x is equal # to 2x = 2if x == 3:   print("x equals 2")DEBUGGINGDebugging is twice as hard as writing the code in 
+the Þrst place.
+ Therefore, if you write the code as cleverly as 
+possible, you are, by de
+Þnition, not smart enough 
+to debug it.- Brian KernighanSETTING UP A DEVELOPMENT ENVIRONMENTMODULE 1 MPCS 50101DEVELOPMENT ENVIRONMENT¥Development environment
+ - The tools you will use to develop software
+ ¥Some are:
+ ¥Part of your operating system (eg. bash, tar, zip, git)
+ ¥Universal(eg. text editor)
+ ¥Specialized to a platform (eg. iOS, Android)
+ ¥Specialized to a task (eg. Photoshop, Unity)
+DEVELOPMENT ENVIRONMENTTEXT EDITORVERSION CONTROLCOMPILER/INTERPRETERVISUALIZATION
+PACKAGE 
+MANAGERDEVELOPMENT ENVIRONMENT¥This course will use universal tools that will be 
+useful throughout the program
+ ¥Exposed to many different tools along the way
+ ¥Development environment will be come very 
+personal to your own preferences
+ ¥There is no "best" (although there is no 
+shortage of opinions)DEVELOPMENT ENVIRONMENTVERY 
+PERSONAL CHOICEDEVELOPMENT ENVIRONMENTVSCODEGITHUBPYTHONTERMINALANACONDADEVELOPMENT ENVIRONMENT¥We are going to be a universal 
+development environment
+ ¥IDE (Integrated Development Environment)
+ -Puts all development tools in a 
+single interface -Specialized for languages 
+(PyCharm) or platforms (Xcode)
+PRODUCTIVE BUT OVERWHELMINGSHELL!SHELL¥A Unix shell is an interpreter that 
+provides a command line user 
+interface ¥Text commands to execute
+ ¥Create scripts of one or more such 
+commands ¥Shells
+ ¥Bash,tcsh,zshSHELL¥A terminal window allows the user 
+access to a text terminal and all its 
+applications
+ -Command-line interfaces (CLI)
+ ¥These may be running either on 
+the same machine or on a different 
+one via telnet, ssh -How you interface with servers, 
+clusters, etc.SHELL¥Essential  shells commands
+ ¥We'll learn more during the 
+course, but you should use these
+ ¥Pay attention to flags, 
+especially "-i" on rm
+% ls% cd% mv% mkdir% rmdir% man% touch% rm -i% clear% cp% which% whoamiSHELL% touch "myfile.txt"% cp myfile.txt ~/Documents/myfile.txt% cd ~/Documents/% pwd% ls% rm myfile.txtSHELL¥Where is it?
+SHELL¥Powershell
+TEXT EDITORDEVELOPMENT ENVIRONMENT¥Text Editors
+ ¥Emacs/VI ¥BBEdit, Text Wrangler, 
+Sublime, TextEdit, Atom, 
+Visual Studio Code
+ ¥IDE: Xcode, PyCharm, Android Studio
+HTTPS://CODE.VISUALSTUDIO.COMDEVELOPMENT ENVIRONMENTDEVELOPMENT ENVIRONMENTDEVELOPMENT ENVIRONMENTDEVELOPMENT ENVIRONMENT¥Visual Studio Code text editor 
+by Microsoft
+ ¥Highly customizable editor can 
+be used by any programming 
+language ¥Extend the functionality by 
+adding packages
+DEVELOPMENT ENVIRONMENTDEVELOPMENT ENVIRONMENTSIDEBARDEVELOPMENT ENVIRONMENTDIRECTORY
+DEVELOPMENT ENVIRONMENTFILES LOADED INTO THE TEXT EDITORFILES LOADED INTO THE TEXT EDITORDEVELOPMENT ENVIRONMENTSETTINGSDEVELOPMENT ENVIRONMENT¥Don't install the 
+Python extension
+ ¥We'll do it later
+PROGRAMMING LANGUAGEPROGRAMMING  LANGUAGE¥We are using 
+Python 3 in this 
+course -Not much difference for 
+beginnersPROGRAMMING LANGUAGE# Python 2 vs. 3 # Print is a function in 3; in 2 it was a keyword # Python 2 print "Hello" print("Hello") # Python 3 print("Hello") PROGRAMMING LANGUAGE# Python 2 vs. 3 # Python 2 str are ASCII, Python 3 is Unicode; convert # 'u' in Python 2 # Python 2 print(u'Hello') # Python 3 print('Hello') PROGRAMMING LANGUAGEYOUR FIRST PROGRAM IN PYTHONPROGRAMMING  LANGUAGES¥Python is an 
+interpreted 
+language ¥The interpreter can 
+be run in two modes  -Interactive mode
+ -Script modePROGRAMMING LANGUAGES¥Interactive mode 
+executes each line of code
+ ¥Type at the 
+prompt ">>>"
+ ¥Ctrl-D or exit() to quitPROGRAMMING  LANGUAGES¥Script mode ¥Type code in text 
+editor
+ ¥Execute from a 
+terminalPACKAGE 
+MANAGERDEVELOPMENT ENVIRONMENT¥Python has an active supporting community of contributors and 
+users that also make their software available under open source 
+license terms
+ -Allows Python users to share and collaborate effectively
+ -Simplifies installation and unifies environment
+ ¥Package managers for Python
+ -pip -homebrew (Mac only)
+ -AnacondaDEVELOPMENT ENVIRONMENT¥Language Python version 3.9
+ -Some version is probably installed 
+on your computer -Anaconda platform manages many 
+packages that will be used 
+throughout the program
+ -Statistics, data science
+ -Machine learning, AIDEVELOPMENT ENVIRONMENTDEVELOPMENT ENVIRONMENTDEVELOPMENT ENVIRONMENTDOWNLOAD THE LATEST VERSION
+DEVELOPMENT ENVIRONMENTDEVELOPMENT ENVIRONMENT¥Installing will add 
+"anaconda" folder to your home directory 
+by default
+ ¥% cd ~ % lsDEVELOPMENT ENVIRONMENT¥Anaconda changes your default Python
+ ¥Check the path 
+of python
+% which pythonDEVELOPMENT ENVIRONMENT¥How did that happen?
+% cd ~ % more .bash_profileDEVELOPMENT ENVIRONMENT¥How did that happen?
+ ¥$PATH to anaconda was inserted before the default install
+% echo $PATHDEVELOPMENT ENVIRONMENT¥Virtual environments
+ -Semi-isolated Python environment that allows packages to be installed for 
+use by a particular application, rather than being installed system wide
+ ¥Examples -pyenv is the standard tool for creating virtual environments, and has been 
+part of Python since Python 3.3
+ -virtualenv is a third party alternative (and predecessor) to pyvenv. It allows 
+virtual environments to be used on versions of Python prior to 3.4
+WE ARE NOT GOING TO BE USING VIRTUAL 
+ENVIRONMENTSDEVELOPMENT ENVIRONMENTAPPLICATIONS 
+SUPPORTED BY 
+ANACONDADEVELOPMENT ENVIRONMENTMANAGE  DIFFERENT ENVIRONMENTSDEVELOPMENT ENVIRONMENTLEARNING RESOURCESDEVELOPMENT ENVIRONMENTEASILY UPDATE 
+PYTHON AND PACKAGES
+PACKAGES ARE CODE 
+ THAT OTHERS HAVE 
+SHARED; SOME ARE DEPENDENCIESDEBUGGERDEBUGGER¥Python Debugger
+ ¥Lets you start/stop a program 
+while its running ¥Keep track of values as they 
+change through a 
+program
+DEBUGGER¥Access pdb via 
+text editor and/
+or command line
+DEBUGGER¥ We won't worry about pdb for 
+the first few weeks
+ ¥x = 100print(x)y = 200print(y)z = x + yprint(x)ALL THE DEBUGGING YOU'LL NEEDVERSION CONTROLVERSION CONTROL¥Version control 
+lets you save your work at different 
+stages ¥Compare changes
+ ¥Restore your work 
+from previous 
+savesVERSION CONTROL¥Git is a version control system
+ ¥GitHub is service that provides 
+git server accessible online
+ -Desktop app provides a gentle 
+entry point to using gitVERSION CONTROL¥We will be using GitHub to 
+distribute and collect 
+assignments -Not for assignment 1PUTTING IT ALL TOGETHERDEVELOPMENT ENVIRONMENTVS CODEGITHUBPYTHONTERMINALANACONDADEVELOPMENT ENVIRONMENT¥Create a folder 
+to work in ¥Create a python 
+file in shell
+ ¥Edit it in viscose
+ ¥Run it with 
+python
+% cd ~/Documents/% mkdir mpcs50101/% touch hello_world.py% code hello_world.py% python hello_world.pyDEVELOPMENT ENVIRONMENTSCRIPT MODETHE ENDMPCS 50101 MODULE 1

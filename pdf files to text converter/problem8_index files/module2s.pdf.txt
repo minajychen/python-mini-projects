@@ -1,0 +1,59 @@
+CONCEPTS OF PROGRAMMINGMODULE 2 MPCS 50101OUTLINE¥Class News ¥Review -Lecture Quiz
+ -Unix Challenge
+ ¥Module Preview
+ ¥Assignment Preview
+CLASS NEWSMODULE 1 MPCS 50101CLASS NEWS¥Getting 
+development environment 
+setup is a big first step ¥Timeline for  
+grading and 
+resubmission
+COMPUTING NEWS¥Python Module 
+of the Week
+COMPUTING NEWS¥Good resource 
+for the most 
+commonly used modules -This one useful  for the 
+homeworkCOMPUTING NEWS¥4th of July 
+ObservedHTTPS://NEWS.YCOMBINATOR.COM/
+REVIEWMODULE 2 MPCS 50101UNIX CHALLENGEUNIX CHALLENGE¥Unix challenge
+ -Man tarUNIX CHALLENGEtar -cvf my_files.tar file1 file2tar -cvf my_files.tar file* ex*.py-c create-v verbose (tell us what's going on)-f archive file nameUNIX CHALLENGEtar -cvzf my_files.tgz file1 file2-c create-v verbose (tell us what's going on)-f archive file name-z compressAPPLIES COMPRESSION  ALGORITHM (OPTIONAL)NOTE THE  .TGZUNIX CHALLENGEtar -xvf my_files.tar tar -xvf my_files.tgz-x extract-v verbose (tell us what's going on)-f archive file name-z compressLECTURE QUIZ REVIEWLECTURE QUIZLECTURE QUIZLECTURE QUIZLECTURE QUIZLECTURE QUIZLECTURE QUIZBREAKOUT  EXERCISESMODULE 2 MPCS 50101BREAKOUT EXERCISESMODULE PREVIEWMODULE 2 MPCS 50101MODULE PREVIEW¥Variables, Expressions and Statements
+ ¥Control Flow and Conditional Execution
+ -Boolean Expression
+ -Conditional Statements
+ ¥Functions
+ -Variable Arguments
+ ¥Iteration
+ -For Loops -While Loops ¥StringsLET'S LEARN  TO PROGRAMMODULE PREVIEW¥Get the 
+!ready.
+A PYTHON PROGRAM "A PYTHON PROGRAM¥Calculate the batting average for Johnny 
+Ballgame. He has been to the play 100 times 
+this season, has been walked 23 times, and 
+has 41 hits. Print his stats in the following 
+format:  Johnny BallgameÕs batting average is .###!A PYTHON PROGRAMWHAT IS THIS FILE?
+WHO IS THE AUTHORINFORMATIVE 
+VARIABLE NAMES
+A PYTHON PROGRAMCITE SOURCES FOR OUTSIDE INFORMATION
+COMMENT FOR SOMEONE ELSE WHO MIGHT NOT KNOW THISRELAVANT VARIABLE NAME
+A PYTHON PROGRAMA PYTHON PROGRAMCOMPATIBLITY ISSUE
+ PYTHON 2: 100/41 = 2 PYTHON 3: 100/41 = 0.41A PYTHON PROGRAMSEMANTIC ERRORREADABILITYA PYTHON PROGRAMCONVERT TO FLOAT
+READABILITYA PYTHON PROGRAMCONVERT TO FLOAT
+READABILITYA PYTHON PROGRAMTHIS IS CORRECT (BUT WILL IT ALWAYS BE)
+DIFFERENT WAYS TO FORMAT OUTPUT
+A PYTHON PROGRAMTHIS IS CORRECT BUT WILL IT ALWAYS BE?
+ WHAT IS THE CORRECT BEHAVIOR 
+THAT I WANT TO HAPPEN?
+DIFFERENT WAYS TO FORMAT OUTPUT
+A PYTHON PROGRAMBUILT-IN FUNCTION IN PYTHON
+A PYTHON PROGRAMRELATED CODE 
+IN FUNCTION FUNCTION DEFINED BEFORE CALLEDKEYBOARD INPUTKEYBOARD INPUT¥Python has a 
+built-in function 
+called `input` 
+ -Prompts user 
+for text entry -Returns what the user types 
+as a stringname = input("What is your name?")print("Hello " + name)# What is your name? Andrew # Hello  Andrew KEYBOARD INPUTname = input("What is your name?")age = input("How old are you?")print("Hello " + name)print("Next year you will be ", age + 1)Traceback (most recent call last):  File "workspace.py", line 5, in <module>    print("Next year you will be ", age + 1TypeError: cannot concatenate 'str' and 'int' objectsKEYBOARD INPUTname = input("What is your name? ")age = input("How old are you? ")# Convert string age to a integerage_number = int(age)print("Hello " + name)print("Next year you will be ", age_number + 1)# What is your name? Oscar# How old are you? 7# Hello Oscar# You are 8CONVERT 
+ STRING  TO  A NUMBERKEYBOARD INPUT# Calculate the area of the squarelength = input("Enter length: ")width = input("Enter width: ")# Remember length and width are stringslength_int = int(length)width_int = int(width)# Calculate the areaarea = length_int * width_intprint("Area equals: ", area)CREATE A 
+NEW  INTEGER FROM A STRINGCODING EXAMPLESCODING EXAMPLESWrite a program to determine if an inputed number is even or odd.THE % SYMBOL IS CALLED THE MODULO OPERATOR
+   IT RETURNS THE REMAINDER OF  DIVIDING  THE LEFT HAND  OPERAND BY RIGHT  HAND OPERANDCODING EXAMPLESnum = input("Enter a number: ")mod = int(num) % 2if mod > 0:    print("You picked an odd number.")else:    print("You picked an even number.")CODING EXAMPLESnum = input("Enter a number: ")mod = int(num) % 2if mod > 0:    print("You picked an odd number.")else:    print("You picked an even number.")EVEN NUMBERS WILL  HAVE REMAINDER OF 0
+ ODD NUMBERS WILL  HAVE REMAINDER OF 1
+ IF MOD == 0:CODING EXAMPLESWrite a program to calculate the length of a string?CODING EXAMPLESdef string_length(string):    count = 0    for char in string:        count += 1    return countlength = string_length('hello world')print("The string is %d characters long" % length)CODING EXAMPLESWrite a program to guess a random number between 1 and 20.CODING EXAMPLESimport randomrandom_number = random.randint(1, 20)print('I am thinking of a number between 1 and 20.')while True:    string_input = input('>  ')    guess = int(string_input)    if guess == 1:        breakprint('You guessed it!')PROGRAMMING PATTERN:
+ WILL REPEAT FOREVER 
+UNTIL ÒBREAKÓASSIGNMENTASSIGNMENTTHE ENDMPCS 50101 MODULE 2

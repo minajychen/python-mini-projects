@@ -1,0 +1,195 @@
+CONCEPTS OF PROGRAMMINGMODULE 4 MPCS 50101MODULESMODULE 4 MPCS 50101MODULES¥Code bases can become big and unwieldy ¥Need to work well with other code 
+ -You've written
+ -Third-parties
+ ¥Require collaboration with many developers
+MODULES¥Strategies to cope -Your own internal management of files 
+! -Structured organization supported by 
+language "MODULES¥Python source files use the 
+".py" extension and are called 
+modules ¥Modules provide for code 
+reuse across applications
+## greeting.py#def main():    print('Hello class')MODULES¥Python source files use the 
+".py" extension and are called 
+modules ¥Modules provide for code 
+reuse across applications
+## greeting.py#def say_hello():    print('Hello class')MODULES¥Python source files use the 
+".py" extension and are called 
+modules ¥Modules provide for code 
+reuse across applications
+## greeting.py#def say_hello():    print('Hello class')SURPRISE! YOU'VE BEEN USING MODULES THIS WHOLE TIME!MODULES# Import the string moduleimport string# Call the function using the module # name followed by the function nametrans = string.maketrans('abegiloprstz', '463611092572')s = 'The quick brown fox jumped over the lazy dog.'print(s.translate(trans))# >>> Th3 qu1ck 620wn f0x jum93d 0v32 7h3 142y d06.IMPORT ANOTHER MODULE 
+USING IMPORT
+CALL USING MODULE.FUNCTION  SYNTAX
+MODULES¥Let's make a 
+module## greeting.py#def say_hello():    print('Hello class')MODULES¥Python files run 
+in different ways 
+using modules ¥Before executing 
+code, special variables defined -__name__## greeting.py#def say_hello():    print('Hello class')print("What is the name of this module?")print(__name__)MODULES¥If Python interpreter is running 
+the module (source file) as the 
+main program it sets the 
+`__name__` variable to `__main__`## greeting.py#def say_hello():    print('Hello class')say_hello() # __name__ is set __main__ # when we run the program as #  # % python ./greeting.py MODULES¥If file is being imported from 
+another module `__name__` is 
+set to the module's name
+ -File name## greeting.py#def say_hello():    print('Hello class')## name.py#import greetinggreeting.say_hello()MODULES## greeting.py#def say_hello():    print("Hello class from %s" % __name__)say_hello()# % python greeting.py # >>> Hello class from __main__MODULES## greeting.py#def say_hello():    print("Hello class from %s" % __name__)# # name.py # import greeting greeting.say_hello() # % python name.py  # >>> Hello class from greeting MODULES¥Defining a main() function in your 
+code allows you 
+to use it as a standalone program and or 
+moduledef say_hello():    print("Hello class")# Define a main function to allows the # program to run in both modesdef main():    say_hello()# Boilerplate pattern if __name__ == '__main__':    main()MODULESdef say_hello():    print("Hello class")# Define a main function to allows the # program to run in both modesdef main():    say_hello()# Boilerplate pattern if __name__ == '__main__':    main()STANDALONE PROGRAM
+MODULESdef say_hello():    print("Hello class")# Define a main function to allows the # program to run in both modesdef main():    say_hello()# Boilerplate pattern if __name__ == '__main__':    main()AS A MODULEXMODULES¥Different ways to 
+import a module# Import style 1 import greeting # Import style 2 from greeting import say_hello from greeting import *MODULES¥Pros
+ -Imports all functions in the module
+ ¥Cons -Typing module.function is tedious 
+and redundant
+ -#import greeting # Call 'say_hello' from  # the `greeting` module greeting.say_hello()MODULES¥Pros
+ -Less typing -Control over which 
+functions are loaded
+ ¥Cons -Loose context -Potential name 
+clashfrom greeting import say_hello # Call 'say_hello' from the `greeting` # module. No need to call using greeting.say_hello() say_hello() MODULESfrom greeting import say_hello, func1, func2, func3 # Call the functions imported from `greeting` module say_hello() func1() func2() func3()MODULESfrom greeting import say_hello, func1, func2, func3 # Call the functions imported from `greeting` module say_hello() func1() func2() func3()  func4() # $This is in the greeting.py file, but not imported MODULES# Import every function from the greeting module from greeting import * # Call functions  say_hello() func1() func2() func3() func4() # Here it is! MODULESBEST  PRACTICE? THOSE ARE FIGHTING  WORDSMODULES# Module fight from greeting import say_hello from another_file import say_hello # Which 'say_hello' is being called? say_hello() say_hello() MODULES# Module fight from greeting import say_hello from another_file import say_hello # Which 'say_hello' is being called? say_hello() say_hello() MODULES% python  Python 2.7.12 |Anaconda 4.1.1 (x86_64)| (default, Jul  2 2016, 17:43:17)  >>> import greeting >>> dir(greeting) ['__builtins__', '__doc__', '__file__', '__name__', '__package__', 'say_hello']DIR()!RETURNS LIST OF THE ATTRIBUTES AND METHODS OF ANY 
+OBJECT (SAY FUNCTIONS , MODULES, 
+STRINGS, LISTS, DICTIONARIES ETC.)MODULES>>> import greeting>>> dir(greeting)['__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'argv', 'debugging_statement', 'say_goodbye', 'say_hello', 'say_hola']>>> greeting.__doc__>>> greeting.__file__'/Users/2020-session-4/modules/greeting.py'>>> greeting.__name__'greeting'MODULES¥.pyc file is created by the 
+Python 
+interpreter when 
+it is imported ¥"c"ompiled byte code that can be 
+interpreted by 
+the Python VM
+MODULES¥So, is Python is 
+compiled language or interpreted 
+language? ¥HTTP://WWW.TECHDARTING.COM/2014/04/PYTHON-
+COMPILED-OR-INTERPRETED-LANGUAGE.HTML%MODULESMODULESORGANIZING MODULAR CODEORGANIZING  MODULES¥Reusing code may require you 
+to organize your 
+code in a less efficient manner
+ ¥Think about other benefits 
+before 
+refactoring
+def compute_tax_and_tip(amount):     return ((amount + \              (amount*.0875)) * 1.20) # Refactored for reusability and  # testing def compute_tax_and_tip(amount):     tax = compute_tax(amount)     tip = compute_tip(amount + tax,20)     return amount + tax + tip def compute_tax(amount):     pass def compute_tip(amount):     passORGANIZING  MODULES¥Reusing code may require you 
+to organize your 
+code in a less efficient manner
+ ¥Think about other benefits 
+before 
+refactoring
+def compute_tax_and_tip(amount):     return ((amount + \              (amount*.0875)) * 1.20) # Refactored for reusability and  # testing def compute_tax_and_tip(amount):     tax = compute_tax(amount)     tip = compute_tip(amount + tax,20)     return amount + tax + tip def compute_tax(amount):     pass def compute_tip(amount):     passORGANIZING MODULES¥Module search path 
+order
+ ¥Python interpreter 
+looks for a built-in 
+module with that 
+name ¥A file with the 
+module_name.py ¥System path (sys.path, 
+$PYTHON_PATH
+ORGANIZING MODULESFIRSTORGANIZING MODULESTHENORGANIZING MODULESFINALLY
+ANATOMY OF A 
+FILE (MODULE)MODULE 4 MPCS 50101ANATOMY
+ OF A FILE¥Best practices for Python files 
+and modulesANATOMY
+ OF A FILE¥Shebang #! ¥Specify $PATH for Python 
+interpreter
+ ¥Used in other scripting 
+languages#!/USR/BIN/PERLANATOMY
+ OF A FILE¥Shebang ¥Docstring ¥Author information/metada
+ ¥Imports ¥Constants - in CAPITALS
+ ¥CodeANATOMY
+ OF A FILE¥Shebang ¥Docstring ¥Author information/metada
+ ¥Imports ¥Constants - in CAPITALS
+ ¥CodeANATOMY
+ OF A FILE¥Shebang ¥Docstring ¥Author information/metada
+ ¥Imports ¥Constants - in CAPITALS
+ ¥CodeANATOMY
+ OF A FILE¥Shebang ¥Docstring ¥Author information/metada
+ ¥Imports ¥Constants - in CAPITALS
+ ¥CodeANATOMY
+ OF A FILE¥main() function
+ ¥Functions
+ ¥Biolerplate for main() function
+ANATOMY
+ OF A FILE¥main() function
+ ¥Functions
+ ¥Biolerplate for main() function
+DOCSTRING AND COMMENTSANATOMY
+ OF A FILE¥main() function
+ ¥Functions
+ ¥Biolerplate for main() function
+ANATOMY
+ OF A FILE¥main() function
+ ¥Functions
+ ¥Biolerplate for main() function
+ANATOMY OF 
+A FILE¥DemoA FEW USEFUL MODULESMODULE 4 MPCS 50101USEFUL MODULESUSEFUL MODULES¥sys provides 
+access to system features
+from sys import argv # argv reads the command line and # separates the values by space script, first, second, third = argv print("Argv: ", argv) print("First: ", first) print("Second: ", second) # % python workspace.py 1 2 # ('Argv:', ['workspace.py', '1', '2']) # ('First: ', '1') # ('Second: ', '2')USEFUL MODULES¥Alternative way 
+of importing
+import sys script, first, second, third = sys.argv print("Argv: ", sys.argv) print("First: ", first) print("Second: ", second) # % python workspace.py 1 2 # ('Argv:', ['workspace.py', '1', '2']) # ('First: ', '1') # ('Second: ', '2') USEFUL MODULES¥datetime for 
+date and time 
+manipulation
+USEFUL MODULESimport datetime today = datetime.date.today() print('Today    :', today) one_day = datetime.timedelta(days=1) print('One day  :', one_day) yesterday = today - one_day print('Yesterday:', yesterday) # Today    : 2017-01-22 # One day  : 1 day, 0:00:00 # Yesterday: 2017-01-21 USEFUL MODULES¥random for pseudorandom number generation
+ ¥Deterministic - 
+same inputs will 
+give same outputs every time
+USEFUL MODULES¥Since someone wrote an 
+algorithm for 
+`random` it isn't truly random ¥pseudorandomimport random for x in range(10):     x = random.random()     print x #  0.852928792625 #  0.724121900095 #  0.571978696988 #  0.156635427665 #  0.529135673911 USEFUL MODULES¥Many ways to get and format a random value>>> random.randint(0,100) 94 >>> random.randint(0,50) 49 >>> t = [1,2,3,4,5] >>> random.choice(t) 3ITTERTOOLS
+MODULE 5 MPCS 50101ITERTOOLS
+¥Module to perform efficient 
+loopingfrom itertools import count for i in count(10):     if i > 20:         break     else:         print(i) # 10 # 11 # 12 and so on ITERTOOLS
+¥Perform combination and 
+permutations of 
+itemsitems = ['a', 'b', 'c'] from itertools import permutations for p in permutations(items):     print # ('a', 'b', 'c') # ('a', 'c', 'b') # ('b', 'a', 'c') # ('b', 'c', 'a') # ('c', 'a', 'b') # ('c', 'b', 'a')ITERTOOLS
+from itertools import combinations print list(combinations('WXYZ', 1)) #[('W',), ('X',), ('Y',), ('Z',)] print list(combinations('WXYZ', 2)) #[('W', 'X'), ('W', 'Y'), ('W', 'Z'), ('X', 'Y'), ('X', 'Z'), ('Y', 'Z')] print list(combinations('WXYZ', 3)) # [('W', 'X', 'Y'), ('W', 'X', 'Z'), ('W', 'Y', 'Z'), ('X', 'Y', 'Z')] print list(combinations('WXYZ', 4)) #[('W', 'X', 'Y', 'Z')] WITHMODULE 4 MPCS 50101WITH¥`with` statement 
+is used in exception 
+handling to 
+make the code 
+cleaner and readable
+# With statement with open('file_path', 'w') as file:file.write('hello world !') WITH# File handling file = open('file_path', 'w') file.write('hello world !') file.close() IDIOMATIC PYTHON
+EXCEPTION BEFORE F.CLOSE() 
+COULD LEAVE YOUR PROGRAM 
+ IN AN UNKNOWN STATE
+WITH# File handling # Using a try/finally blockfile = open('file_path', 'w') try:   file.write('hello world') finally:  file.close() LOOKS A LITTLE BETTERCATCHES EXCEPTION DURING 
+ FILE WRITEWITH# File handling # Using with statement with open('file_path', 'w') as file:      file.write('hello world !') NOW WEÕRE TALKING 
+&CAPTURES AND RELEASES THE FILE HANDLE WHEN THE CODE USING IT IS DONE NO F.CLOSE() NEEDED
+WITH¥Pattern used in 
+methods that 
+open/close resources
+ -locks, sockets, subprocesses, 
+telnets, etc.# File handling # Using with statement with open('file_path', 'w') as file:     file.write('hello world !') PACKAGES
+MODULE 4 MPCS 50101PACKAGES
+¥Packages are namespaces 
+which contain -Modules  -Other packages
+PACKAGES
+¥Namespaces is a system to clearly define scope in a program
+ -Which functions and variables 
+belong to which module -Prevents clash
+ ¥Python modules namespace 
+by "Dotted module names"
+import sys inputs = sys.argv import greeting greeting.say_hello()PACKAGES
+¥Package is a directory that contains 
+ -Module files (*.py)  ¥The package `international` has 3 modules
+ -English.py
+ -Chinese.py -Spanish.pyPACKAGES
+¥Package require an 
+`__init__.py` file ¥File that indicates that the 
+directory is a package  
+ -Optionally define modules to 
+importPACKAGES
+import international.chinese import international.english import international.spanish international.chinese.say_hi() international.english.say_hi() international.spanish.say_hi() PACKAGES
+from international import chinese from international import english from international import spanish chinese.say_hi() english.say_hi() spanish.say_hi() PACKAGES
+# __init__.py __all__ = ["chinese","english","spanish"] # greeting.py from international import * chinese.say_hi() english.say_hi() spanish.say_hi() RECURSIONMODULE 4 MPCS 50101RECURSIONRECURSION¥Recursion is the 
+process when a 
+function calls 
+itself
+ ¥Recursive function
+def countdown(n):    # Test the current value of `n`    if n < 0:        print('Blastoff!')    else:        print("n = %s" % n)        # Call countdown again        countdown(n-1)countdown(5)# >>> 5 4 3 2 1 0 Blastoff!RECURSIONdef countdown(n):    # Test the current value of `n`    if n < 0:        print('Blastoff!')    else:        print("n = %s" % n)        # Call countdown again        countdown(n-1)countdown(5)# >>> 5 4 3 2 1 0 Blastoff!RECURSIVE FUNCTIONCALLS ITSELFRECURSION¥Define a "base condition" that 
+escapes the 
+recursion
+def countdown(n):    # Test the current value of `n`    if n < 0:        print('Blastoff!')    else:        print("n = %s" % n)        # Call countdown again        countdown(n-1)countdown(5)# >>> 5 4 3 2 1 0 Blastoff!BASE CONDITIONRECURSION# Factorial#    0! = 1#    5! = 5 * 4 * 3 * 2 * 1#    n! = n(n-1)!def fact(n):    if n == 0:        return 1    return n * fact(n -1)print(fact(0))  # 1print(fact(5)) # 120print(fact(10)) # 3628800BASE CONDITIONRECURSION¥If the base condition is not met  
+the memory will become 
+exhausted ¥"Stack overflow" error
+# Stack overflow def fact(n):     if n == 1000:         return 1     return n * fact(n-1)RECURSION¥If the base condition is not met  
+the memory will become 
+exhausted ¥"Stack overflow" error
+# Stack overflow def fact(n):     if n == 1000:         return 1     return n * fact(n-1) RECURSION¥Advantages -Don't repeat yourself
+ -Simple way to write code -Some problems lend themselves 
+to recursive solutions (traversing a 
+tree)
+def countdown(n):    # Test the current value of `n`    if n < 0:        print('Blastoff!')    else:        print("n = %s" % n)        # Call countdown again        countdown(n-1)countdown(5)# >>> 5 4 3 2 1 0 Blastoff!RECURSION¥Disadvantages -Takes more memory (everything is 
+held until base condition is met)
+ -Takes longer (calling and returning 
+from functions)
+def countdown(n):    # Test the current value of `n`    if n < 0:        print('Blastoff!')    else:        print("n = %s" % n)        # Call countdown again        countdown(n-1)countdown(5)# >>> 5 4 3 2 1 0 Blastoff!RECURSION¥All recursive programs can be 
+written iteratively and vice 
+versadef countdown(n):    # Test the current value of `n`    if n < 0:        print('Blastoff!')    else:        print("n = %s" % n)        # Call countdown again        countdown(n-1)countdown(5)# >>> 5 4 3 2 1 0 Blastoff!RECURSIONdef draw_triangle(dot, star):    if dot == 0:        return 0    else:        left_space = dot + 1        print('.' * left_space, end=' ')        asterixs = star * 2 + 1        print('*' * asterixs)        draw_triangle( dot - 1, star + 1 )...* ..***.*****RECURSION..* .********...* ..***.************THE ENDMODULE 4 MPCS 50101

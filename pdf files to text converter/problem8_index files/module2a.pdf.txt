@@ -1,0 +1,381 @@
+CONCEPTS OF PROGRAMMINGMODULE 2 MPCS 50101VARIABLES, 
+EXPRESSIONS, AND STATEMENTS
+MODULE 2 MPCS 50101VARIABLES, EXPRESSIONS 
+AND STATEMENTS 
+ VALUES AND TYPES
+¥Python has built-in data types 
+to represent different values
+ -Numeric: int, long, float, complex  -Sequences: str, bytes, tuple
+ -Collections: dict, set, list
+>>> print(123)123>>> print(98.6)98.6>>> print('Hello world')Hello worldVARIABLES, EXPRESSIONS 
+AND STATEMENTS 
+ VALUES AND TYPES
+¥Fixed values such as numbers, letters, 
+and strings are called ÒconstantsÓ 
+because their value does not change
+ ¥String constants -Single quotes (') -Double quotes (") -Triple """ for multiline
+>>> print(123)123>>> print(98.6)98.6>>> print('Hello world')Hello world>>> print("""Hello world!""")Hello world!VARIABLES, EXPRESSIONS 
+AND STATEMENTS 
+ VALUES AND TYPES
+¥Python can tell you what kind 
+of type a value is>>> type('Hello, World!')<type 'str'>>>> type(17)<type 'int'>>>> type(3.2)<type 'float'>>>> type('17')<type 'str'>VARIABLES, EXPRESSIONS 
+AND STATEMENTS 
+ VARIABLES
+>>> x = 5>>> y = 17.2>>> pi = 3.1415926535897932>>> name = "Johnny">>> name = 'Ada'>>> type(name)<type 'str'>¥A variable is a name that refers  
+to a value stored in memory
+ ¥Notice
+ -You do not have to tell 
+Python what the type is
+ -You can change the value of 
+a variable after declaration
+VARIABLES, EXPRESSIONS 
+AND STATEMENTS 
+ VARIABLES
+>>> x = 'Ada'>>> name = 'Ada'>>> Name = "Ada'>>> 1st_name = 'Ada'  File "<stdin>", line 1    1st_name = 'Ada'           ^SyntaxError: invalid syntax¥Choose names that are 
+meaningful ¥Name rules -Start with letter or "_"
+ -Contains letters, number, "_"
+ -Case sensitive
+VARIABLES, EXPRESSIONS 
+AND STATEMENTS 
+ VARIABLES
+and   del   for   is   raise   assert   elif   from   lambda   return   break   else   global   not   try   class   except   if   or   while   continue   exec   import   pass   yield   def   Þnally   in   print   as   with¥Reserved words in Python 
+language -Can not use as variable namesVARIABLES, EXPRESSIONS 
+AND STATEMENTS 
+ ASSIGNMENT STATEMENTS
+5       # expression y       # expression y + 5   # expression   x = 10    # assignment x = y + 5 # assignment with           # expression ¥Expression - a combination of 
+values, variables, and operators  ¥Assignment - assign value of a variableVARIABLES, EXPRESSIONS 
+AND STATEMENTS 
+ OPERATORS AND OPERANDS
+>>> 2 + 35>>> 4 ** 216>>> x = 2>>> x + 35>>> 4 + (3*4)16>>> 12 % 20¥Operators symbols represent computations
+ -+ (addition), 
+ --  (subtraction)
+ -* (multiplication)
+ -/  (division)
+ -** (power) -% (modulo, remainder)
+VARIABLES, EXPRESSIONS 
+AND STATEMENTS 
+ OPERATORS AND OPERANDS
+>>> x = 2>>> y = 5>>> x + y7>>> 12 % 20>>> 11 % 2 1¥Notice that you can mix variables 
+and constant values in expressions
+ ¥Modulo -12 / 2 = 6 R 0 -11 / 2 = 5 R 1 ¥How can you tell if a number is 
+odd or even using modulo?VARIABLES, EXPRESSIONS 
+AND STATEMENTS 
+ OPERATORS AND OPERANDS
+>>> 10 / 25.0>>> 9 / 24.5>>> 9 / 2.04.5 >>> 10.0 / 2.05.0>>> 2/9.00.2222222222222222¥Python division behavior
+ -Integer division converts to float
+ -Floating point division produces 
+floating point numbers
+ -Integer divided by float 
+produces float
+VARIABLES, EXPRESSIONS AND STATEMENTS 
+ OPERATORS AND OPERANDS
+# Python 2 vs. 3 Warning # # Division operator defaults to floating point value # Python 2 print 7 / 5  # 1 # Python 3 print 7 / 5. # 1.4 VARIABLES, EXPRESSIONS 
+AND STATEMENTS 
+ OPERATORS AND OPERANDS
+>>> x = 10 / 2>>> type(x)<type 'int'>>>> y = 9 / 2.0>>> type(y)<type 'float'>>>> int(1.3)1¥You can convert between 
+different types
+CAREFULVARIABLES, EXPRESSIONS 
+AND STATEMENTS 
+ ORDER OF OPERATIONS
+>>> x = 1 + 2 ** 3 / 4 * 5>>> print x11>>> x = 1 + (2 ** 3) / 4 * 5>>> print x11¥PEMDAS -Parenthesis are always respected
+ -Exponentiation (raise to a power)
+ -Multiplication, Division, and 
+Remainder -Addition and Subtraction
+ ¥Left to rightVARIABLES, EXPRESSIONS 
+AND STATEMENTS 
+ OPERATORS  AND TYPES
+>>> x = 1 + 2>>> x3>>> x = "hello " + "world">>> xhello world>>> x = "hi " * 4>>> x'hi hi hi hi '¥Operators can have different behaviors 
+based on the type
+ ¥"+" -Number = addition
+ -String = concatenate ¥"*" -Number = multiply
+ -String = repeat
+VARIABLES, EXPRESSIONS 
+AND STATEMENTS 
+ COMMENTS# Assignment 1# Length and width as defined by the problemlength = 1 + 3width = x + 3 #print length#print width# Compute the areaarea = length * width¥Anything after a # is ignored
+ ¥Comments help to explain what is happening in your code ¥Document who wrote the code 
+or other ancillary information
+ ¥Turn off a line of code - perhaps 
+temporarily (debugging)VARIABLES, EXPRESSIONS AND STATEMENTS 
+ PUTTING IT ALL TOGETHER# Calculate the surface area of a cubelength = 5width = 5# Compute the area of a single facesingle_face_area = length * width# Compute the surface area of all facesnumber_of_faces = 6surface_area = number_of_faces * single_face_areaCprint("The surface area is ")print(surface_area)CONTROL FLOW AND  CONDITIONAL EXECUTIONMODULE 2 MPCS 50101CONTROL FLOW¥Sequential execution
+ -Everything runs
+ ¥Conditional execution
+ -Input and values determine what code gets executedCONTROL FLOW¥Control structures
+ -Direct the behavior of your 
+program
+CONDITIONAL EXECUTION¥Not all code is executed in a 
+program
+ ¥The same program may need 
+to executed different code 
+paths depending on the data
+THIS WILL  NOT BE EXECUTEDCONDITIONAL EXECUTION¥Debugging Tip
+ -Make sure that you test that your 
+program works under all code 
+paths
+ -Ask someone else to help test your program
+BOOLEAN EXPRESSIONBOOLEAN EXPRESSION¥Boolean expression
+ -An expression 
+that is either 
+true or false>>> 5 == 5True>>> 3 == 2False>>> 1 < 10TrueBOOLEAN EXPRESSION¥`bool` is a type that has values of 
+True or False
+>>> type(True) <type 'bool'> >>> type(False) <type 'bool'>BOOLEAN EXPRESSION¥`True` is not the 
+same as `true`>>> type(True) <type 'bool'> >>> type(true) Traceback (most recent call last):   File "<stdin>", line 1, in <module> NameError: name 'true' is not defined SYNTAX ERROR
+BOOLEAN EXPRESSION¥Comparison Operators ¥Compare 
+values and evaluate as Booleanx == y  # x is equal to y x != y  # x is not equal to y x > y   # x is greater than y x < y   # x is less than y x >= y  # x greater than or equal to y  x <= y  # x is less than or equal to y  BOOLEAN EXPRESSION¥Not!
+5 == 5  # True 5 != 5  # False 4 != 3  # True BOOLEAN EXPRESSION¥Chained comparison operators>>> x = 2>>> 1 < x < 3True>>> 10 < x < 20False>>> 3 > x <= 2True>>> 2 == x < 4TrueBOOLEAN EXPRESSION¥Logical operators combine conditions
+ -`and` -`or` -`not`# Both expressions must evaluate# to `True` for the statement to # be evaluatedx = 3y = 5if x == 3 and y == 5:    print("This would be evaluated")if x == 3 and y == 4:    print("This is not evaluated")BOOLEAN EXPRESSION¥Logical operators combine conditions
+ -`and` -`or` -`not`# One expressions must evaluate# to `True` for the statement to # be evaluatedx = 3y = 5if x == 3 or y == 10:    print("This would be evaluated")if x == 0 or y == 5:    print("This would be evaluated")BOOLEAN EXPRESSION¥Logical operators combine conditions
+ -`and` -`or` -`not`# Not returns True is statements are # not True, otherwise returns False# Evaluates to `True`x = Falseprint(not x)BOOLEAN EXPRESSION¥Common error
+ -"=" is for assignment -"==" is for comparison>>> y = 10>>> x = 100>>> x == y False>>> x = y >>> x10>>> x == y True!ASSIGNMENTASSIGNMENTCOMPARISON
+COMPARISON
+CONDITIONAL STATEMENTS
+CONDITIONAL  STATEMENTS
+¥Conditional 
+statements -Check values -Change code paths
+# Conditional checks using the `if`# statement x = 3if x == 3:    print("x is equal to 3!")CONDITIONAL STATEMENTS
+# if statement x = 3if x == 3:    print("x is equal to 3!")THE CONDITIONEXECUTED IF TRUESEMICOLONCONDITIONAL STATEMENTS
+if x != y:  print("x does NOT equal y")if x > y:  print("x is greater than y")if x < y:     print("x is less than y")if x >= y:  print("x is greater than or equal to y")if x <= y:  print("x is less than or equal to y")CONDITIONAL STATEMENTS
+¥Condition must 
+be indented ¥Python allows 
+tabs or spaces -Stick to spaces
+ -Editors can 
+helpif x == 3:    print("x is equal to 3!")if x == 3:print("x is equal to 3!")File "<string>", line 7    print("x is equal to 3!")        ^IndentationError: expected an indented blockCONDITIONAL STATEMENTS
+CONDITIONAL STATEMENTS
+CONDITIONAL STATEMENTS
+CONDITIONAL STATEMENTS
+¥Maintain indent to indicate the 
+scope of the block 
+ ¥Lines affected
+ ¥Reduce indent back to indicate 
+the end of the 
+blockCONDITIONAL STATEMENTS
+¥Blank lines are 
+ignored
+ ¥Comments lines 
+are always 
+ignored
+CONDITIONAL STATEMENTS
+¥Variables modified in the 
+scope maintain new valuex = 4print("x equals", x)if x % 2 == 0:  print("Bad even numbers")  ccx = x + 1  print("x equals", x)print("x equals", x)     #x=5CONDITIONAL STATEMENTS
+x = Trueif x == True:  print("x is True")  print("This is a compound statement")  print("You can put as many statements as you like")  print("Below the conditional")CONDITIONAL STATEMENTS
+x = 3y = 5if x == 3 and y == 5:    print("True")if x == 3 or y == 10:    print("True")if x == 2 or y == 2:    print("False")LOGICAL  OPERATORS
+CONDITIONAL STATEMENTS
+¥The `pass` statement does nothing
+ ¥Can be useful for debugging or stubbing out your program
+x = 100# Check if evenif x % 2 == 0: print("This number is even")# Check if divisible by 10if x % 10 == 0:    print("X is divisible by 10")# Check if divisible by 100if x % 100 == 0:    # Finish this later    passCONDITIONAL STATEMENTS
+¥Alternative 
+execution
+ ¥Execute a statement if condition is False
+# Alternative executionif x % 2 == 0:    print("This number is even")else:    print("x is odd")CONDITIONAL STATEMENTS
+¥Which is better?
+if x % 2 == 0:    print("This number is even")else:    print("X is odd")if x % 2 != 0:    print("This number is odd")else:    print("X is even")CONDITIONAL STATEMENTS
+¥Golden path
+ ¥if x % 2 == 0:    print("This number is even")else:    print("X is odd")if x % 2 != 0:    print("This number is odd")else:    print("X is even")CONDITIONAL STATEMENTS
+¥Chained conditionals
+x = 3y = 10if x < y:    print("x is less than y")elif x > y:    print("x is greater than y")else:    print("x equals y")CONDITIONAL STATEMENTS
+¥Multiple `elif` 
+statements ¥Only the first 
+`True` is 
+executedage = 2if age < 1:    print("newborn")elif age < 16 :    print("Can't drive")elif age < 21:    print("Can't drink")elif age > 40:    print("You're over the hill")elif age >= 65:    print("You can retire")else:    print("You're dead")CONDITIONAL STATEMENTS
+¥Can you find he logic error?
+age = 2if age < 1:    print("newborn")elif age < 16 :    print("Can't drive")elif age < 21:    print("Can't drink")elif age > 40:    print("You're over the hill")elif age >= 65:    print("You can retire")else:    print("You're dead")CONDITIONAL STATEMENTS
+¥You do not need 
+an `else`age = 2if age < 1:    print("newborn")elif age < 16 :    print("Can't drive")elif age < 21:    print("Can't drink")elif age > 40:    print("You're over the hill")elif age >= 65:    print("You can retire")else:    print("You're dead")CONDITIONAL STATEMENTS
+¥Conditionals can 
+be nestedx = 4if x % 2 == 0:    if x > 2:    print("x greater than 2")    else:        print("x less than 2")CONDITIONAL STATEMENTS
+¥Which is better?
+if x % 2 == 0:    if x > 2:        print("x greater than 2")            else:        print("x less than 2")if x % 2 == 0 and x > 0:    print("x greater than 2")else:    print("x less than 2")FUNCTIONSMODULE 2 MPCS 50101FUNCTIONS¥Function is a piece of reusable 
+code -Takes arguments(s) as input
+ -Does some computation
+ -Optionally returns results
+>>> type("Hello")<type 'str'>FUNCTIONS¥Built-in functions as part of 
+Python 
+ -input(), type(), float(), int(), ... ¥Functions we define and use
+# Built-function >>> type("Hello")<type 'str'># User defineddef say_hello():  print("Hello")FUNCTIONS¥Why functions?
+ -Reduce repetitive code
+ -Organization
+ -Debugging -Code sharingdef say_hello():  print("Hello")FUNCTIONS¥Define a function
+ -Use the `def` reserved word
+ -Specify the name
+ -Input parameters (optional)
+ ¥Names must be unique -Can not use function names as 
+variable namesdef say_hello():  print("Hello")FUNCTIONSdef say_hello():  print("Hello")def say_personalized_hello(name):    print("Hello " + name)KEYWORDFUNCTION NAMEPARAMETER
+FUNCTION NAMEFUNCTIONS¥"callÓ or "invoke" the function
+ -Function name
+ -Parentheses
+ -Arguments in an expression 
+def say_hello():  print("Hello")print("Running a function"say_hello()print("Function ran.")# Running a function# Hello# Function ran.FUNCTIONSdef say_personalized_hello(name):    print("Hello " + name)def say_personalized_hello(name1, name2, name3):    print("Hello " + name1)    print("Hello " + name2)    print("Hello " + name3)say_personalized_hello("Jane")say_personalized_hello("Jane","Bob","Lola")PARAMETER
+PARAMETERS
+ARGUMENTARGUMENTFUNCTIONS>>> def greet(lang):...     if lang == 'es':...        print 'Hola'...     elif lang == 'fr':...        print 'Bonjour'...     else:...        print 'Hello'... >>> greet('en')Hello>>> greet('es')Hola>>> greet('fr')BonjourFUNCTIONS¥The call must 
+match the 
+declaration
+def say_hello():    print("Hello")say_hello(1234)Traceback (most recent call last):  File "workspace.py", line 6, in <module>    say_hello(1234)TypeError: say_hello() takes no arguments (1 given)FUNCTIONS¥You are 
+responsible for 
+managing the 
+type of the 
+argument passed
+def plus_one(number):    return number + 1print plus_one(1)>>> 2print plus_one("Lola")Traceback (most recent call last):  File "workspace.py", line 6, in <module>       return number + 1TypeError: cannot concatenate 'str' and 'int' objectsFUNCTIONS¥You are 
+responsible for 
+managing the 
+type of the 
+argument passed
+def plus_one(number):    return number + 1print plus_one(1)>>> 2print plus_one("Lola")Traceback (most recent call last):  File "workspace.py", line 6, in <module>       return number + 1TypeError: cannot concatenate 'str' and 'int' objectsIN OTHER LANGUAGES, YOU MAY 
+ SPECIFY THE ARGUMENT TYPESFUNCTIONS¥Use builtin 
+function 
+`isinstance` to validate types
+ ¥help(instance) at interpreter
+def plus_one(number):    if isinstance(number,int):        return number + 1    else:        print("Not a valid argument"print plus_one(1)# >>> 2print plus_one('hello')# >>> Not a valid argument# NoneFUNCTIONS¥help(instance) at interpreter
+FUNCTIONS¥A ÒfruitfulÓ function 
+is one that 
+produces a result 
+(or return value)
+ ¥The `return` 
+statement ends the 
+function execution 
+and Òsends backÓ the result of the 
+function
+def add(x,y):  summed = x + y  return summed >>> add(1,3)4FUNCTIONS¥You are 
+responsible for 
+the managing 
+the type of the 
+returned value
+def add(x,y):  summed = x + y  return summed >>> print("Hello" + add(1,3)Traceback (most recent call last):  File "<stdin>", line 1, in <module>TypeError: cannot concatenate 'str' and 'int' objectsFUNCTIONS¥Variables 
+declared in a 
+function are local 
+scope -Only accessible in that function
+def add(x,y):    summed = x + y    return summedprint add(1,4)print summed>>> 5Traceback (most recent call last):  File "workspace.py", line 8, in <module>    print summedNameError: name 'summed' is not definedSUMMED IS ONLY 
+AVAILABLE IN THE 
+FUNCTIONFUNCTIONSsummed = 100print("Initial value of summed = ",summed)def add(x,y):    summed = x + y    print("In Function: summed = ",summed)    return summedadd(1,4)print("Final value of summed = ",summed)# >>> Initial value of summed =  100# >>  In Function: summed =  5# >>> Final value of summed =  100SUMMED IN FUNCTION SCOPE IS NOT SAME AS SUMMED IN MAIN PROGRAMFUNCTIONS¥You can make a 
+variable global in a function using 
+`global`x = 0def plus_one():    global x    x = x + 1print("Initial value of x = ",x)plus_one()print("Final value x = ",x)# Initial value of x =  0# Final value x =  1FUNCTIONSx = 0def plus_one():    global x    x = x + 1def plus_two():    plus_one()    plus_one()print("Initial value of x = ",x)plus_two()print("Final value x = ",x)YOU CAN CALL OTHER FUNCTIONS FROM WITHIN FUNCTIONSFUNCTIONSx = 0def plus_one():    global x    x = x + 1def plus_two():    plus_one()    plus_one()print("Initial value of x = ",x)plus_two()print("Final value x = ",x)Traceback (most recent call last):   File "workspace.py", line 14, in <module>     plus_two()   File "workspace.py", line 10, in plus_two     plus_one()   File "workspace.py", line 6, in plus_one     x = x/0 ZeroDivisionError: integer division or modulo by zero ERROR LOGGING IS HIERARCHY OF CALL ORDER.  THE LAST ONE IS BEST PLACE TO START.
+VARIABLE 
+ARGUMENTSVARIABLE 
+ARGUMENTS¥Allow your 
+function to take 
+a variable number of arguments
+ -Add items to a collection
+ -?# Python program to illustrate # *args for variable number of # arguments def wordsToPrint(*argv): for arg in argv: print (arg) wordsToPrint('Hello','World') >>> Hello WorldVARIABLE 
+ARGUMENTS¥Mix and match# Python program to illustrate # *args with first extra argument def fun(arg1, *argv): print ("First argument :", arg1) for arg in argv: print("*argv :", arg) fun('Hello', 'World', "!") First argument : HelloNext argument through *argv : WorldNext argument through *argv : ! !VARIABLE 
+ARGUMENTS¥Keyword (kw) 
+arguments (args)
+# Python program to illustrate # *kargs for variable number of keyword arguments def myFun(**kwargs): for key, value in kwargs.items(): print ("%s == %s" %(key, value)) # Driver code myFun(first ='Hello', mid ='World',\.           last='!') last == Hellomid == Worldfirst == !ITERATION
+MODULE 2 MPCS 50101ITERATION
+¥Iteration
+ -Performing repeated tasks
+ ¥Python has built-in language 
+features for different types of 
+iteration
+for i in range(4):    print(i)FORITERATION
+¥"Definite loops" execute an exact number of times
+ ¥Use the `for` structure to iterate 
+through the members of a set
+for i in range(0,5):    print(i)print('Blastoff!')# 5# 4# 3# 2# 1# Blastoff!ITERATION
+¥`for` loops have explicit 
+iteration variables that change 
+each time through a loop
+for i in range(0,5):    print(i)print('Blastoff!')# 5# 4# 3# 2# 1# Blastoff!ITERATION VARIABLE
+ITERATION
+¥The iteration variable ÒiteratesÓ 
+through the sequence (ordered 
+set) ¥The block (body) of code is executed once for each value in the sequence
+ ¥The iteration variable moves 
+through all of the values in the 
+sequencefor i in [5, 4, 3, 2, 1]:    print(i)ITERATION VARIABLE
+BODYMEMBERS OF A COLLECTIONITERATION
+¥We will discuss data structures 
+later, but a collection of 
+objects can be represented as 
+a list using `[]`
+x = [5, 4, 3, 2, 1]print(x)y = ["dog", "cat", "wolf"]print(y)z = ["dog", 1, "cat", 2]print(z)LIST OF INTSLIST OF STRINGSLIST OF INTS AND STRINGITERATION
+x = [5, 4, 3, 2, 1]for item in x:    print(item)# 5 4 3 2 1for animal in ["dog", "cat", "wolf"]:    print(animal)# dog cat wolffor item in ["dog", 1, "cat", 2]:    print(item)# dog 1 cat 2ITERATION
+¥Best practice to use 
+meaningful names for iteration 
+variables -for animal in animals: -for user in users:x = [5, 4, 3, 2, 1]for item in x:    print(item)# 5 4 3 2 1for animal in ["dog", "cat"]:    print(animal)# dog catITERATION
+¥Find the total of 
+a collection of 
+integerstotal = 0print('Total: ', total)for thing in [9, 41, 12, 3, 74, 15]:    total = total + thing    print(total, thing)print('After', total)# Total:  0# 9 9# 50 41# 62 12# 65 3# 139 74# 154 15# After: 154ITERATION
+¥Find the biggest 
+number in a collection of ints
+biggest_number = -1print('Start:', biggest_number)for value in [9, 41, 12, 3, 74, 15] :    if value > biggest_number:        biggest_number = value        print('New biggest number: ',value)print 'After:', biggest_number# Start: -1# New biggest number:  9# New biggest number:  41# New biggest number:  74# After: 74ITERATION
+biggest_number = -1# Iterate through the collectionfor value in [9, 41, 12, 3, 74, 15]:        # If the value is bigger than the current biggest,     # change its value    if value > biggest_number:        biggest_number = valueprint 'Biggest number:', biggest_numberWHILEITERATION
+¥The `while` statement evaluates a condition before 
+executing code
+ -Continues to execute until 
+condition is False
+n = 5while n > 0:    print n    n = n - 1print('Blastoff!')# >>> 5# >>> 4# >>> 3# >>> 2# >>> 1# >>> Blastoff!ITERATION
+¥Common to use variables within iteration to keep state
+ -Increment = + 1
+ -Decrement = - 1
+n = 5while n > 0:    print n    n = n - 1print('Blastoff!')# >>> 5# >>> 4# >>> 3# >>> 2# >>> 1# >>> Blastoff!ITERATION
+¥Augmented assignment operators http://automatetheboringstuff.com/chapter3/
+ITERATION
+¥While loops are 
+called Òindefinite 
+loopsÓ because they keep going 
+until  a logical 
+condition 
+becomes False# Infinite loopn = 5while n > 0:    print("This will go on forever")print("You'll never get here")ITERATION
+¥Dead loop never runs ¥Special considerations 
+for your code# Dead loopwhile n < 0:    print("This will never run")print("This will be executed.")ITERATION
+¥The `break` statement ends the 
+current loop and jumps to the 
+statement immediately 
+following the loop
+ ¥Why exit early? -Sometimes you won't know the 
+values until something is running
+n = 0while n > 0:    print n    n = n + 1if n == 50: cccccbreakprint("after the break")ITERATION
+n = 0while n > 0:    print(n)    n = n + 1if n == 50:      breakfor i in range(0,10):    print(i)    if i == 3:        breakITERATION
+¥The `continue` 
+statement -Ends the 
+current iteration
+ -Jumps to the 
+top of the loop 
+and starts the 
+next iteration
+for i in range(0,10):    if i == 3:        continue    print(i)012456789"STRINGSMODULE 2 MPCS 50101STRINGS¥A string is a sequence of characters ¥A string literal uses 
+quotes   'Hello' or "Hello"
+ ¥For strings, + means ÒconcatenateÓstr1 = "Hello "str2 = 'World'greeting = str1 + str2print(greeting)#Hello WorldSTRINGS¥When a string contains numbers, it is still 
+a string>>> str3 = '123'124>>> str3 = str3 + 1Traceback (most recent call last):  File "<stdin>", line 1, in <module>TypeError: cannot concatenate 'str' and 'int' objectsSTRINGS¥We can convert 
+numbers in a string into a number using int()>>> str3 = '123'>>> x = int(str3) + 1>>> print(x)124STRINGS¥Strings are a 
+collection of 
+characters ¥Get characters with 
+index specified in square brackets
+fruit = 'banana'letter = fruit[1]print(letter)# aSTRINGS¥The index value must be an integer and starts at zero
+fruit = 'banana'letter = fruit[1]print(letter)# aSTRINGSx = "abcdefghijklmnopqrstuvwxyz"print(x[0])print(x[25])# a# zSTRINGS¥The index value can be an expression that is 
+computedx = "abcdefghijklmnopqrstuvwxyz"print(x[0])# aprint(x[20+5])# ay = 5print(x[20 + y])# zSTRINGS¥You will get a 
+Python error if 
+you attempt to 
+index beyond the end of a 
+stringx = "abcdefghijklmnopqrstuvwxyz"print(x[0])print(x[26])Traceback (most recent call last):  File "<stdin>", line 1, in <module>IndexError: string index out of rangeSTRINGS¥There is a built-in 
+function len() 
+that gives us the 
+length of a string
+fruit = 'banana'index = 0while index < len(fruit):    letter = fruit[index]    print("#", index, letter)    index = index + 1# 0 b# 1 a# 2 n# 3 a# 4 n# 5 aSTRINGS¥Note index vs. length
+fruit = 'banana'print(len(fruit))# Len is 6 # index is 0...5STRINGS¥A definite loop using a `for` statement is much more 
+concise (but not necessarily better)
+ ¥The iteration variable is 
+completely taken care of by 
+the for loop
+ -We loose the index
+fruit = 'banana'for letter in fruit:    print("#", letter)# b# a# n# a# n# aSTRINGS¥Same thing 
+different ways
+# While loopfruit = 'banana'index = 0while index < len(fruit):    letter = fruit[index]    print("#", index, letter)    index = index + 1# For loopfruit = 'banana'for letter in fruit:    print("#", letter)STRINGS¥Slicing strings 
+allows us to 
+select a subset ¥string[start:stop]>>> quote = "Four score and seven years ago.">>> quote[5:10]'score'>>> quote[11:12]'a'>>> quote[0:4]'Four'STRINGS¥Beginning to index -string[:stop] ¥Index from 
+beginning to end -string[start:]>>> quote[:4]'Four'>>> quote[15:]'seven years ago.'STRINGS¥The `in` keyword 
+checks to see if one string is ÒinÓ another string
+fruit = 'banana'# Find a character in stringif 'a' in fruit:    print('Found it!')# Find a string in a stringif 'ban' in fruit:    print('Found it!')THE `IN` EXPRESSION RETURNS TRUE OR FALSE
+STRINGS¥Relational 
+operators work on strings ¥Based on lexicographical order
+ -Alphabetical
+'Apple' == "Apple" # True'apple' == "Apple" # False'chalk' < 'chalkboard' # True'a' > 'A' # TrueSTRINGS¥Upper and lowercase 
+compared by 
+ordinal values
+'a' > "A"      # Trueprint(ord("A")) # 65print(ord("a")) # 97 SUMMARY
+MODULE 1 MPCS 50101SUMMARY
+¥Control 
+structures
+# Forfor i in [0,1]:# Whilewhile x > 0:# If/Elif/Elseif x > 0:elif: else:SUMMARY
+¥Functions
+# Void function with no argumentsdef myFunction():  print("Hello world")# Function returning a valuedef myFunction2():  return "Hello world")# Function taking argument and# returning a valuedef myFunction3(name):  return "Hello world" + name)SUMMARY
+num = raw_input("Enter a number: ")mod = int(num) % 2if mod > 0:    print("You picked an odd number.")else:    print("You picked an even number.")SUMMARY
+import randomrandom_number = random.randint(1, 20)print('I am thinking of a number between 1 and 20.')while True:    string_input = raw_input('>  ')    guess = int(string_input)    if guess == 1:        breakprint('You guessed it!')THE ENDMPCS 50101 MODULE 2

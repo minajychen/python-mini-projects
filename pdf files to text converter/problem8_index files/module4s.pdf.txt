@@ -1,0 +1,75 @@
+CONCEPTS OF PROGRAMMINGMODULE 4 MPCS 50101OUTLINE¥Class News ¥Review -Lecture Quiz
+ -Unix Challenge
+ ¥Breakout
+ ¥Module Preview
+ ¥Assignment Preview
+CLASS NEWSMODULE 4 MPCS 50101CLASS NEWS¥Read the problems carefully
+ -User input only if its stated -Creating a function (show test snippet using it)
+ ¥There are many ways to solve the problems, use the best way for you
+ ¥Watch what function `return` versus modify
+CLASS NEWS¥Best practices are always implied
+ -Docstrings -Variable names
+ -CommentsRUBRIC WILL HAVE BEST 
+PRACTICES FOR EVERY 
+PROBLEMREVIEWMODULE 4 MPCS 50101UNIX CHALLENGEUNIX CHALLENGE# Unix Challenge cat speech.txt | tr -d '[:punct:]'UNIX CHALLENGELECTURE QUIZ REVIEWLECTURE QUIZLECTURE QUIZLECTURE QUIZLECTURE QUIZLECTURE QUIZLECTURE QUIZBREAKOUT EXERCISESMODULE 4 MPCS 50101BREAKOUT EXERCISESEXAM  PRACTICEDEBUGGING PRACTICES AND TOOLSMODULE 4 MPCS 50101DEBUGGINGDebugging is twice as hard as writing the code in 
+the first place. Therefore, if you write the code as 
+cleverly as possible, you are, by definition, not 
+smart enough to debug it.  -Brian W. Kernighan, computer scientist, 1942- 
+DEBUGGING¥Testing a program to find errors can take 
+more time than writing the code
+ ¥"Debugger" is a program that overrides the 
+execution of a program to allow you to 
+inspect code ¥Python Debugger (PDB)
+ ¥Others...
+DEBUGGING¥"Debugger" allows you to go through your code and observe
+ ¥Start/stop code ¥Print variables ¥Execute statements one-by-onePYTHON DEBUGGERDEBUGGING¥pdb - an 
+interactive 
+source code 
+debugger for Python programs
+DEBUGGING¥Access PDB debugger ¥Programmatic
+ ¥Command line
+ ¥Integrated in IDEDEBUGGING WITH PDB¥Functionality is 
+the same
+ ¥Usability is very 
+different
+DEBUGGING WITH VSCODEDEBUGGINGDEBUGDEBUGGINGBREAKPOINT WILL STOP YOUR CODEDEBUGGINGVARIABLES WHEN STOPPED
+DEBUGGINGCONTINUESTEP OVERSTEP INTOSTEP OUTRESTART
+STOPDEBUGGING¥Continue
+ ¥Step Over - next line
+ ¥Step Into - go into function
+ ¥Step Out - exit function
+ ¥Restart ¥EndDEBUGGINGSTEP INTODEBUGGINGCONTINUEADD ANOTHER BREAKPOINTVERSION CONTROLMODULE 3 MPCS 50101VERSION CONTROL¥Version control is 
+a system that 
+records changes 
+to a file or set of files over time so 
+that you can 
+recall specific 
+versions laterVERSION CONTROL-Track
+ -Blame -RevertGITGIT¥Git is a free & open source, distributed version control system 
+ -Designed to handle everything from small to very large projects with speed and 
+efficiency
+FROM THE GUY WHO BROUGHT YOU LINUXGIT¥Every git repository 
+contains the 
+entire history of 
+the project
+GIT,
+ MERCURIALSUBVERSIONGIT¥In practice the 
+way people use Github makes git 
+more like 
+centralized 
+model ¥Does not really  
+matter
+GIT,
+ MERCURIALGIT¥Use Git from the command 
+line or Github Desktop
+ -Same thing behind the scenes
+ -Start with Desktop (please)
+GITGIT¥git init ¥git add my_file ¥git commit ¥git statusGIT¥git log ¥git status ¥git checkoutGIT¥git status ¥git add  ¥git commitGITHUB DESKTOPGITHUB DESKTOP¥Application that 
+performs the 
+most common git commands ¥Visual change 
+trackerGITHUB DESKTOPNAMEGITIGNOREGITHUB DESKTOPNAMEBRANCHPUBLISH (CAN USE WITHOUT GITHUB)GITHUB DESKTOPFILE CHANGESGITHUB DESKTOPSUGGESTED COMMIT MESSAGECOMMIT TO  MASTER BRANCH (DEFAULT)
+GITHUB DESKTOPHISTORY.
+GITHUB CLASSROOMGITHUB CLASSROOMGITHUB CLASSROOMGITHUB CLASSROOMUSE THISGITHUB CLASSROOMWHERE DO YOU WANT TO STORE 
+IT LOCALLY
+GITHUB CLASSROOMOPENGITHUB CLASSROOMOPENGITHUB CLASSROOMAFTERBEFOREASSIGNMENTMODULE 4 MPCS 50101ASSIGNMENT¥Module 4: AssignmentVIDEO WALKTHROUGH 
+ IN MODULETHE ENDMODULE 4 MPCS 50101

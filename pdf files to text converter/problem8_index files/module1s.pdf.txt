@@ -1,0 +1,263 @@
+CONCEPTS OF PROGRAMMINGMPCS 50101 MODULE 1WELCOME TO  COMPUTINGMODULE 1 MPCS 50101COURSE LOGISTICS¥MPCS 50101 - Concepts of Programming
+ -This should be your first programming 
+class ¥Prerequisites
+ -Desire
+ -Patience
+ -PersistanceCOURSE LOGISTICSCOURSE LOGISTICS¥Instructor -Andrew Binkowski
+ -The University of Chicago -Center for Structural Genomics of Infectious Diseases, 
+Computation Institute
+ -MPCS: Mobile Computing, Bioinformatics
+ -ANL: Midwest Center for Structural Genomics, Leadership Computing Facility
+! ADE
+COURSE LOGISTICS¥Teaching Assistants
+ -Jiamao Zhang, MPCS Alumni,!Senior Data Engineer at Walgreens
+YOUR BEST RESOURCES FOR THIS COURSECOURSE LOGISTICS¥Flipped Classroom 
+ ¥Videos of lectures
+ ¥Meet for discussions, demos and 
+office hours
+! ADE
+COURSE LOGISTICSORGANIZED BY MODULES RELEASE WEEKLY
+COURSE LOGISTICS¥Synchronous Lecture
+ -Monday 5:30 ~ 7:00 PM (CST) -Lectures will recorded and available 
+throughout the quarter
+ ¥Attendance is highly recommended
+GREETINGS AND OUTLINE (5 MIN) REVIEWÒLECTURE QUIZÓ (10 MIN) BREAKOUT ROOM EXERCISES (30 MIN) MODULE PREVIEW (45 MIN)COURSE RESOURCES¥Zoom Etiquette
+ ¥Mute if you are not talking
+ ¥Questions
+ -"Raise Hand" 
+ -Type it in the Zoom chat
+ -Post in Slack module ¥All sessions will be recorded
+ -You can opt-out by turning camera and 
+microphone off
+ -Will not be distributed outside of class
+COURSE RESOURCES-I would appreciate if you turn 
+on camera or set profile 
+picture of yourself
+COURSE LOGISTICSASYNCHRONOUS LECTURES  USING  PANOPTO 
+ VIDEOCOURSE LOGISTICS¥Slack for ALL class communication
+ -MPCS50101-2021-summer ¥Post questions, interesting links, 
+etc. -Anyone can post -Anyone can answer -Personal communication via email
+COURSE LOGISTICSTRY TO USE THREADS 
+ TO REPLY TO SPECIFIC 
+POSTS COURSE LOGISTICS¥Turn in work via Canvas 
+assignments ¥Github for coursework and 
+exams  -Commit your repo to Òturn inÓ
+ -Private repositories
+LATER IN THE 
+COURSECOURSE LOGISTICS¥Andrew
+ -Wednesday 10:00AM (CST)
+ ¥Jiamao -Friday 6:00 - 9:00PM (CST) ¥Thomas -Weeknight TBD
+ -Weekend TBD
+OFFICE HOURS ARE YOUR BEST OPPORTUNITY TO 
+LEARN #OFFICE-HOURS UPDATES, CHANGES, 
+QUESTIONSCOURSE DESIGNCOURSE DESIGN¥Provide the foundation for you to be successful in the program
+ -Think like a computer scientist
+ -Introduce best practices in programming
+ -Expose you to tools and technologies that are part of a computer 
+scientistÕs toolkit
+COURSE DESIGNSTART THINKING AND  
+TALKING LIKE A 
+COMPUTER SCIENTISTCOURSE DESIGN¥This will be funny 
+in just a few weeksCOURSE DESIGN ¥Challenges
+ -Different backgrounds of students
+ -I don't know what you don't know -Pacing of the course
+ ¥Please ask questions 
+frequently
+SYLLABUSSYLLABUSCANVAS
+SYLLABUS¥Topics to be covered
+ -Modules 1-5 -Construct algorithms, and express them as computer programs
+ -Refine and improve programs by an iterative process
+ -Modules 6-9:  -Core principles of object-oriented programming
+ -Fundamental data structures
+ -Basics of computational efficiency and "Big-O" notation
+CANVAS
+SYLLABUSSYLLABUSCANVAS 
+CALENDAR WILL HAVE 
+IMPORTANT 
+DATES
+COURSE WORKCOURSE WORK¥Final grade will be determined 
+as follows:
+ -75% assignments -5% midterm exam
+ -10% final project
+ -5% lecture quiz
+ -5% participation
+COURSE WORK¥Assignments -The bulk of the coursework (practice makes perfect)
+ -Each week builds on the previous, important to keep up
+ -Work is 
+(will be)
+ submitted through GitHub
+ -No late work is accepted (unless extraordinary circumstances)
+ -You may resubmit assignments one time and split the difference
+ITERATION AND 
+IMPROVEMENTSYLLABUS¥Midterm Exam
+ -Check point to make sure that everyone is on the same page
+ ¥Final Project
+ -Overview of entire course material
+COURSE WORK¥Lecture Quiz
+ -Weekly questions that come from 
+the lecture videos and reading
+ -Due before next class
+ -Highlight important topics that are 
+not covered in assignment
+ -Retake as many times as you want
+CANVAS
+COURSE WORK¥Participation
+ -To get the most out of remote learning 
+try to engage with the instructors and 
+classmates as much as possible -Full credit
+ -Being active in Slack
+ -Working collaboratively in breakout 
+rooms 
+ -Making appearance in office hours
+COURSE WORK¥Honor Code -All the assignments should be your own work
+ -Department policies are strictly enforced
+ -Cite any resources you use on homework
+ -Includes online resources (Stack Overfow, 
+blogs, GitHub, etc.)COURSE WORK¥Programming can be 
+frustrating
+ -Don't be afraid to take a break
+ -Go for a walk...it really helps
+ACGATCG what does it 
+all mean?
+?COURSE WORK¥Every mistake is a learning opportunity (to learn not to do it again) ¥The more mistakes you make 
+the more you will learn 
+!ACGATCG what does it 
+all mean?
+?COURSE TECHNOLOGIESCOURSE TECHNOLOGIES¥Developing computer program requires a 
+variety of tools and technologies ¥We will use Òpopular" technologies that you 
+will see throughout the program and industry
+COURSE TECHNOLOGIES¥Command line tools using Bash, Powershell
+ ¥Programming with Python
+ ¥Text editing with Visual Studio Code
+ ¥Version control using Github
+ ¥Package management with Anaconda 
+COURSE TECHNOLOGIES¥Other technologies
+ -Jupyter Notebooks -linux.uchicago.edu
+ -External APIs -Python Debugger
+ -VS Code packages -Continuous Integration
+COURSE RESOURCESCOURSE RESOURCES¥No required text books
+ -Books are good for self learning
+ -Do not match the scope of this 
+course ¥We will use open source 
+materials throughout the 
+courseCANVAS
+COURSE RESOURCES¥Automate the 
+Boring Stuff
+COURSE RESOURCES¥Think Python
+https://greenteapress.com/wp/think-python-2e/
+COURSE RESOURCES¥Learn Python the 
+Hard Way
+HTTPS://LEARNPYTHONTHEHARDWAY.ORG/PYTHON3/
+COURSE RESOURCES¥Many resources for learning the 
+details of the Python 
+programming language
+ -Free digital books available from 
+UChicago library
+ -Stack Overflow -GitHub -The InternetCOURSE RESOURCES¥Many resources for learning the 
+details of the Python 
+programming language
+ -Free digital books available from 
+UChicago library
+ -Stack Overflow -GitHub -The InternetBEING A COMPUTER SCIENTIST IS MORE THAN JUST LEARNING TO PROGRAMBREAKOUT EXERCISESMODULE 1 MPCS 50101BREAKOUT EXERCISESMODERN COMPUTING AND COMPUTATIONAL 
+THINKINGMODULE 1 MPCS 50101MODERN COMPUTING¥What does a computer scientist do?
+MODERN COMPUTING¥Computer scientists think.
+ -How to solve a problem
+ -How to solve a problem 
+using a computerTHESE CAN BE VERY 
+DIFFERENTMODERN COMPUTING¥Being a computer scientist has 
+less to do with coding than 
+thinking
+ ¥Problem solving
+ -Many times the problems 
+you create for yourself
+EVERYTHING YOU 
+NEED TO KNOW ABOUT PROGRAMMINGEVERYTHING YOU NEED TO KNOW ABOUT 
+PROGRAMMING¥A program is just a set of instructions how to perform a computation
+ ¥Examples of programs
+ -Format text -Find the area of a complex shape
+ -Target ads to kids
+ -Detect objects in an imageTHEY'RE ALL JUST FOLLOWING INSTRUCTIONSEVERYTHING YOU NEED TO 
+KNOW ABOUT PROGRAMMING¥Programs for humans
+ -Dance, bake a cake -Drive a car ¥Programs for computers
+ -Dance, bake a cake -Drive a carSOMETIMES THEY ARE THE SAMEEVERYTHING YOU NEED TO 
+KNOW ABOUT PROGRAMMING¥Programs for humans
+ -Drive a car ¥Programs for computers
+ -Drive a carSOMETIMES NOTEVERYTHING YOU NEED TO KNOW ABOUT 
+PROGRAMMINGA HUMAN DOING THE ROBOT OR A ROBOT DOING THE HUMANEVERYTHING YOU NEED TO 
+KNOW ABOUT PROGRAMMING¥To get the desired results 
+programs for both humans and 
+computers require 
+PRECISION and ACCURACYCOMPONENTS OF EVERY COMPUTER
+ PROGRAMCOMPONENTS OF EVERY COMPUTER PROGRAM
+dogs = 4 cats = 2 if dogs > cats:   print(ÒI love dogs moreÓ) total_animals = dogs + cats print(ÒI have %d animalsÓ % total_animals) YOU ALREADY KNOW HOW TO DO THISCOMPONENTS OF EVERY COMPUTER PROGRAM
+if 'hello' in ['hello', 'goodbye', 'farewell']:            print('We found hello!')          if 10 > 20:                                  print('10 is greater than 20')           print('B')        if 10 < 20:                                  print('10 is less than 20')       print('Done!') COMPONENTS OF EVERY COMPUTER PROGRAM
+if 'hello' in ['hello', 'goodbye', 'farewell']:            print('We found hello!')          if 10 > 20:                                  print('10 is greater than 20')           print('B')        if 10 < 20:                                  print('10 is less than 20')       print('Done!') WE FOUND HELLO! B 10 IS LESS THAN 20 DONE!COMPONENTS OF EVERY 
+ COMPUTER PROGRAM¥Input -Data from keyboard touches
+ -A file -Database -Sensors  -...  COMPONENTS OF EVERY 
+ COMPUTER PROGRAM¥Math
+ -Mathematical operations
+ -Logic operations
+ -Behind the scenes operations
+COMPONENTS OF EVERY 
+ COMPUTER PROGRAM¥Conditional Execution
+ -Check for conditions and execute 
+appropriate code
+ -Some code paths will never be executed 
+"COMPONENTS OF EVERY 
+ COMPUTER PROGRAM-Conditional Execution
+ -Check for conditions and execute 
+appropriate code
+ -Some code paths will never be 
+executed at runtime
+PROBABLY SOMETHING
+  MORE LIKE THISCOMPONENTS OF EVERY 
+ COMPUTER PROGRAMif x < 10: print("smaller")if x > 20: print("bigger")print("finished")COMPONENTS OF EVERY 
+ COMPUTER PROGRAM¥Repetition
+ -Perform same action repeatedly 
+ -Often combined with conditional 
+statementsCOMPONENTS OF EVERY 
+ COMPUTER PROGRAM¥Output -Display data on the screen
+ -Save to file -...EVERYTHING YOU NEED TO 
+KNOW ABOUT PROGRAMMING¥LetÕs write a program to 
+ÒCount Words in a BookÓ
+EVERYTHING YOU NEED TO KNOW ABOUT 
+PROGRAMMINGselect a book open the book count every word on the page if there is another page, turn it  count every word on the page If there are no more pages,  Print how many words we sawCOUNT WORDS  IN A BOOKEVERYTHING YOU NEED TO KNOW ABOUT 
+PROGRAMMINGselect a book open the book count every word on the page if there is another page, turn it  count every word on the page If there are no more pages,  Print how many words we sawINPUTREPETITIONREPETITIONCONDITIONALOUTPUTCOUNT WORDS  IN A BOOKEVERYTHING YOU NEED TO KNOW ABOUT 
+PROGRAMMINGname = raw_input('Enter file:')handle = open(name, 'r')text = handle.read()words = text.split()counts = dict()for word in words:   counts[word] = counts.get(word,0) + 1bigcount = Nonebigword = Nonefor word,count in counts.items():    if bigcount is None or count > bigcount:        bigword = word        bigcount = countprint bigword, bigcountINPUTREPETITIONREPETITIONCONDITIONALOUTPUTCOUNT WORDS  IN A FILEEVERYTHING YOU NEED TO KNOW ABOUT 
+PROGRAMMINGselect a book open the book count every word on the page if there is another page, turn it  count every word on the page If there are no more pages,  say how many times we saw each wordINPUTREPETITIONREPETITIONCONDITIONALOUTPUTPRECISION AND ACCURACY ¥IS THERE A BOOK? ¥IS IT IN A LANGUAGE WE KNOW ABOUT? ¥IS THERE ANOTHER PAGE?
+ ¥IS THE PAGE BLANK? DOES THAT MEAN 
+ITS THE END OF THE BOOK? ¥WHAT IF THERE ARE CONSECUTIVE 
+BLANK PAGES?
+ ¥DOES THE COVER COUNT?EVERYTHING YOU NEED TO KNOW ABOUT 
+PROGRAMMINGselect a book open the book count every word on the page if there is another page, turn it  count every word on the page If there are no more pages,  say how many times we saw each wordINPUTREPETITIONREPETITIONCONDITIONALOUTPUTPRECISION AND ACCURACY ¥IS THERE A BOOK? ¥IS IT IN A LANGUAGE WE KNOW ABOUT? ¥IS THERE ANOTHER PAGE?
+ ¥IS THE PAGE BLANK? DOES THAT MEAN 
+ITS THE END OF THE BOOK? ¥WHAT IF THERE ARE CONSECUTIVE 
+BLANK PAGES?
+ ¥DOES THE COVER COUNT?THIS IS THE ITERATIVE PART OF WRITING 
+PROGRAMSÉSTUFF YOU DIDNÕT THINK OF THE FIRST TIME (EDGE CASES, BUGS, ETC.)EVERYTHING YOU NEED TO KNOW ABOUT 
+PROGRAMMING¥The language and platform may differ, but that's it 
+# ¥For any given problem
+ -Break it down in to these components
+ -Write it in a way a computer can understand
+EVERYTHING YOU NEED TO KNOW ABOUT 
+PROGRAMMING¥There are many ways to write a program to solve a problem
+ ¥How do we evaluate "good" programming
+ -Efficiency
+ -Readability
+ -StyleEVERYTHING YOU NEED TO KNOW ABOUT 
+PROGRAMMING¥There are many ways to write a program to solve a problem
+ ¥How do we evaluate "good" programming
+ -Efficiency
+ -Readability
+ -StyleHIGHLY
+ SUBJECTIVEOBJECTIVEEVERYTHING YOU NEED TO KNOW ABOUT 
+PROGRAMMING¥There are many ways to write a program to solve a problem
+ ¥How do we evaluate "good" programming
+ -Efficiency
+ -Readability
+ -StyleHIGHLY
+ SUBJECTIVEHEART TO HEART TALK
+ YOU WILL ENCOUNTER A LOT OF NEGATIVITY, 
+SCARCASM, ELITISM AND SNARK  WHEN LEARNING COMPUTER SCIENCE. IGNORE IT.
+ THERE ARE ENOUGH PEOPLE WHO ARE KIND, ETHUSIASTIC AND GENUINELY EXCITED TO HELP. 
+FIND THOSE PEOPLE.MODULE OVERVIEWMODULE 1 MPCS 50101MODULE OVERVIEW¥Module 1THE ENDMPCS 50101 MODULE 1

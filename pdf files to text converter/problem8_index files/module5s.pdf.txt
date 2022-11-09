@@ -1,0 +1,164 @@
+CONCEPTS OF PROGRAMMINGMODULE 5 MPCS 50101OUTLINE¥Class News ¥Review -Lecture Quiz
+ -Unix Challenge
+ -Homework Review ¥Breakout
+ ¥Module Preview
+ ¥Assignment Preview
+REGULAR EXPRESSION  AND  TESTINGCLASS NEWSMODULE 5 MPCS 50101COMPUTING  NEWS¥Github technical 
+preview
+COMPUTING  NEWS¥Pseudocode wins the day!
+COMPUTING  NEWS¥Inefficient code 
+ ¥Loop off by 1
+ ¥Security failure
+ ¥Training failure
+REVIEWMODULE 4 MPCS 50101UNIX CHALLENGEUNIX CHALLENGE# Unix Challenge tree anaconda3 > output.txt more output.txtLECTURE QUIZ REVIEWLECTURE QUIZLECTURE QUIZLECTURE QUIZLECTURE QUIZLECTURE QUIZLECTURE QUIZLECTURE QUIZHOMEWORK REVIEWHOMEWORK REVIEW¥There are many 
+ways to solve every problem
+# 3 tab iteration for i in range(3):     print("\t", end="") # 3 tab string multiplication print("\t" * 3) HOMEWORK REVIEW¥Bool Flags to control the flow 
+of execution 
+def find_number(n):     found = False          for number in numbers:         if number == n:             found = True          if found == True:         print("Found it")     else:         print("Nope") HOMEWORK REVIEW¥Counter variables to keep track of iteration
+def biggest_number(numbers):     current_biggest = -1000      number_count = 0     for number in numbers:         if number > current_biggest:             current_biggest = number         number_count = number_count + 1     return current_biggestHOMEWORK REVIEW¥Pay attention to 
+what goes into to iteration loops
+def biggest_number(numbers):     current_biggest = -1000      seen = []     found_number = False     number_count = 0          for number in numbers:     seen = []         if number > current_biggest:             current_biggest = number         seen.append(number)         number_count = number_count + 1     return current_biggestHOMEWORK REVIEW¥Reading 
+tracebacks ¥Bottoms up
+ ¥Pay attention 
+to moduledef greet(someone):   print('Hello, ' + someon) greet(ÔWorld')Traceback (most recent call last):  File "<stdin>", line 1, in <module>  File "<stdin>", line 2, in greetNameError: name 'someon' is not definedHOMEWORK REVIEW¥Reading 
+tracebacks ¥Bottoms up
+ ¥Pay attention 
+to moduledef greet(someone):   print('Hello, ' + someon) greet(ÔWorld')Traceback (most recent call last):  File "<stdin>", line 1, in <module>  File "<stdin>", line 2, in greetNameError: name 'someon' is not definedTHE ERROR STARTS 
+WHERE GREET IS CALLED (LINE 2) BUT THE PROBLEM IS IN THE FUNCTION GREET IN MODULE ON LINE 2HOMEWORK REVIEW¥File reading 3 
+waysfile = open("welcome.txt") data = file.read() file.close()  # do something with data # Error handing file = open('welcome.txt') try:     data = file.read()     # do something with data finally:     file.close() # With statement (autoclose and built-in  # error handling) with open("welcome.txt") as file:     data = file.read()     # do something with dataBEST?HOMEWORK REVIEW¥Reading files in is 
+ÒboilerplateÓ code -YouÕve already written 
+a function to do it
+ ¥Pay attention
+ -How the data is 
+written in the file
+ -Extra blank lines
+ -The very last line
+1.Open file2.Read in file as string3.Clean up whitespace (\n)4.Split (if needed)5.Convert string to expected data type6.Add to data structure (list)7.Close fileHOMEWORK REVIEW¥Reading files in is 
+ÒboilerplateÓ code -YouÕve already written 
+a function to do it
+ ¥Pay attention
+ -How the data is 
+written in the file
+ -Extra blank lines
+ -The very last line
+1.Open file2.Read in file as string3.Clean up whitespace (\n)4.Split (if needed)5.Convert string to expected data type6.Add to data structure (list)7.Close file[1,2,3,4,5,6] IN A FILE IS  NOT A LISTHOMEWORK REVIEWARGUMENTS FROM COMMAND LINEpython command-line-args.py cat dogfish bird 100HOMEWORK REVIEW¥Libraries for parsing command line arguments
+HOMEWORK REVIEW¥Can you use emojis as variables?! = "hello world" print(!)   File "command-line-args.py", line 17     ! = "hello world"     ^ SyntaxError: invalid character in identifierHOMEWORK REVIEW¥Can you use emojis as variables?# emoji.swift ! = "hello world" print(!)  >>> swift emoji.swift !YOU CAN IN SWIFTREFACTORING
+MODULE 5 MPCS 50101REFACTORING
+¥Rock, Paper Scissors,REFACTORING
+¥Functions
+ ¥Seperation of 
+responsibilities
+ ¥Take data in, 
+process, and 
+return
+REFACTORING
+¥Easier to test when functions 
+do a single thing
+REFACTORING
+¥Easier to test when functions 
+do a single thing
+NO WAY TO INDEPENDETLY 
+ TEST COMPUTER CHOICE REFACTORING
+¥Flow of program 
+should be driven by main block ¥Allows for non-
+sequential 
+developmentREFACTORING
+¥Where to put the print 
+(debug) statements ¥Keep with function?
+ ¥Print on return?
+ ¥REFACTORING
+¥Think about how we are going 
+to assert our conditions
+ ¥Test driven development
+ ¥Write code that satisfies the tests
+ANATOMY OF A 
+FILE (MODULE)MODULE 5 MPCS 50101ANATOMY
+ OF A FILE¥Best practices for Python files 
+and modulesANATOMY
+ OF A FILE¥Shebang #! ¥Specify $PATH for Python 
+interpreter
+ ¥Used in other scripting 
+languages#!/USR/BIN/PERLANATOMY
+ OF A FILE¥Shebang ¥Docstring ¥Author information/metada
+ ¥Imports ¥Constants - in CAPITALS
+ ¥CodeANATOMY
+ OF A FILE¥Shebang ¥Docstring ¥Author information/metada
+ ¥Imports ¥Constants - in CAPITALS
+ ¥CodeANATOMY
+ OF A FILE¥Shebang ¥Docstring ¥Author information/metada
+ ¥Imports ¥Constants - in CAPITALS
+ ¥CodeANATOMY
+ OF A FILE¥Shebang ¥Docstring ¥Author information/metada
+ ¥Imports ¥Constants - in CAPITALS
+ ¥CodeANATOMY
+ OF A FILE¥main() function
+ ¥Functions
+ ¥Biolerplate for main() function
+MAIN() IS A NAMING CONVENTION, NOT REQUIREDANATOMY
+ OF A FILE¥main() function
+ ¥Functions
+ ¥Biolerplate for main() function
+DOCSTRING AND COMMENTSANATOMY
+ OF A FILE¥main() function
+ ¥Functions
+ ¥Biolerplate for main() function
+ANATOMY
+ OF A FILE¥main() function
+ ¥Functions
+ ¥Biolerplate for main() function
+BREAKOUT EXERCISESMODULE 4 MPCS 50101BREAKOUT EXERCISES¥Assertions provide 
+internal checks for a condition
+ ¥Uses ¥Formal testing 
+(pytest, unittest, nose)
+ ¥Serious validation 
+(NASA) ¥Self-checking
+def alwaysTrue():     return True def add2numbers(x, y):     return x + y # When asserts fail there is an AssertionError assert alwaysTrue() == True  assert alwaysTrue() != False  assert alwaysTrue() == False # AssertionError assert add2numbers(1, 2) == 3 #  assert add2numbers(1, 2) == 5 # AssertionError  BREAKOUT EXERCISESHTTPS://CLASSROOM.GITHUB.COM/A/ZBFDK_7QMIDTERM EXAM REVIEWMODULE 5 MPCS 50101MIDTERM EXAM REVIEW¥Next Lecture
+ ¥Midterm exam 
+ ¥Small 
+homework assignmentMIDTERM EXAM REVIEW¥Why do we have to take exams for computer science? -Checkpoint for instructors -Good practice for other CS classes
+ -Coding interviews
+MIDTERM EXAM REVIEW¥Material -Everything through this week (except unit testing with pytest) 
+ -Asserts may be provided for testing (like in sample)
+ -Familiar with Python standard library modules we have used
+ -Looking for best coding practices (variable naming, file structure, error 
+handling, data validation, etc.)
+-Testing for logic and coding 
+fluency (not esoteric Python 
+features)
+MIDTERM EXAM REVIEW¥Open coursework -Notes, slides,  class resources, assignments 
+" -Not open Internet (no Googling) 
+#YOU WONÕT HAVE 
+TIME TO LOOK EVERYTHING UP
+MIDTERM EXAM REVIEW¥Exam Format ¥Written answer (Canvas quiz)
+ ¥Multiple Choice, Fill in the Blank, True/False
+ ¥Programming (GitHub Classroom)
+ ¥Download the classroom repository
+ ¥Last commit before 7:15PM will be graded (90 
+minutes)MIDTERM EXAM REVIEW¥Logistics
+ -5:30 Zoom -Download repository
+ -5:45 Exam officially starts
+ -7:15 Exam is over -Last commit before 7:15 is graded.
+MIDTERM EXAM REVIEW¥How do I ask a question?
+ -Slack DM -Zoom session will be active 
+throughout exam. If you have a 
+question send a message in chat/
+Slack and you will be assigned a 
+breakout room.
+ -Instructors will be standing by
+MIDTERM EXAM REVIEW¥Tips
+ -Read through all the problems first
+ -DonÕt spend too much time on one problem
+ -Write psuedocode first, then fill in the details
+ -You will spend more time thinking than typing
+MIDTERM EXAM REVIEW¥Biggest mistakes students make -Didn't read through all the problems first
+ -Miss some key details (ie. what to return)
+ -Spent too much time on one problem
+ -No comments -Forgetting what's important (correct answer, best practices, etc.)
+NOT TRUSTING THEMSELVES
+MIDTERM EXAM REVIEW¥The best way to prepare is to review the homework
+ -Go back and pick a coding question and try to it without looking at your 
+notes or Googling
+MIDTERM EXAM REVIEW¥Questions?
+SAMPLE EXAMMIDTERM EXAM REVIEW SAMPLE QUESTIONS# Problem 1# What do the following statements evaluate to?a)3+4 == 7b)not(1==1) c)not(1!=1)d)("ABc").rstrip('c').islower()e)str(123).isdigit()MIDTERM EXAM REVIEW SAMPLE QUESTIONS# Problem 2# What do the following statements evaluate to?a)3+4 == 7           # Trueb)not(1==1)          # Falsec)not(1!=1)          # Trued)str(123).isdigit() # Truee)("ABc").rstrip('c').islower() # FalseMIDTERM EXAM REVIEW SAMPLE QUESTIONS# Problem 2# What is the output printed to the screen?def!countdown(n):!!!!if!n!<=!0:!!!!!!!!print('Blastoff!')!!!!else:!!!!!!!!print(n)!!!!!!!!countdown(n-1)countdown(5)MIDTERM EXAM REVIEW SAMPLE QUESTIONS# Problem 2# What is the output printed to the screen?54321Blastoff!PAY ATTENTION 
+ N<=0MIDTERM EXAM REVIEW SAMPLE QUESTIONS#!Problem!5#!Write!a!program!that!calculates!a!20%!tip!for!a!given!dollar!amount.#!Prompt!the!user!to!enter!an!amount.!Using!the!input,!calculate the!tip!and!print!out!the!# inputed!amount,!tip!and!new!total.!!Use!the!exact format!presented!below!when!printing!the!screen.##!!!!!!Amount:!$10.00#!!!!!!Tip:!$2.00#!!!!!!Total:!$12.00##!Validate!the!user!input!to!ensure!that!the!calculations!can!be!completed.!!If not,!print!a!# message!to!the!user!that!indicates!that!there!was!a!problem with!the!input!and!end!the!program.##!The!program!flow!should!resemble!the!following:##!!!!%!python!problem4.py#!!!!Enter!a!dollar!amount?!one!hundred!dollars#!!!!I!was!unable!to!calculate!the!tip.###!!!!%!python!problem4.py#!!!!Enter!a!dollar!amount?!100.00#!!!!Amount:!$100.00#!!!!Tip:!$20.00#!!!!Total:!$120.00MIDTERM EXAM REVIEW SAMPLE QUESTIONSProblem 3: 10 Points-![!]!1pts!Takes!input!from command line and!validates!it-![!]!1pts!Exits (or re-prompt)!with!message!on!bad!input-![!]!1pts!Sets!meaningful!names for variable!and!constant!values-![!]!1pts!Does!correct!tip!calculation-![!]!1pts!Calculates!the!total by adding tip-![!]!1pts!Prints!in!the!meaningful format!for data ($X.XX)-![!]!1pts!Good!coding!practices (file structure, docstring,            comments, functions, readability, etc.)-![!]!3pts!Logic!appears!to!be!there!whether!or!not!code!worksMIDTERM EXAM REVIEW SAMPLE QUESTIONS# Get input from user and check that it is valid# Convert to number and name 'total_bill'# Multiply 'total_bill' by 20% and name result 'tip'# Add 'total_bill' to 'tip' and name 'total_plus_tip'# Print 'total_plus_tip' and format with a $ and 2 decimal placesWHAT IF I 
+BLANK?ASSIGNMENTMODULE 5 MPCS 50101ASSIGNMENT¥AssignmentTHE ENDMODULE 5 MPCS 50101
